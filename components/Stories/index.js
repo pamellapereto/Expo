@@ -8,26 +8,39 @@ export default function Stories(){
             <Text style = {global.titlestory}>Stories</Text>
             <ScrollView horizontal = {true}>
                 <View>
-                    <View>
-                        <Text>Live</Text>
-                        <Text>20.5k</Text>
+                    <View style = {global.containerLive}>
+                        <Text style={global.tag}>Live</Text>
+                        <Text style={global.like}>20.5k</Text>
                     </View>             
                     <Image source={require("../../assets/story1.jpg")} style={global.storyimg}/>
-                    <Text>Savannah</Text>
+                    <Text style={global.username}>Savannah⠀
                     <Image source={require("../../assets/check.png")} style={global.checkimg}/>
+                    </Text>
                 </View>
 
+                <View>
+                    <View style = {global.containerLive}>
+                        <Text style={global.tag2}>Premiere</Text>
+                    </View>   
+                    <Image source={require("../../assets/story2.jpg")} style={global.storyimg}/>
+                    <Text style={global.username}>Cooper⠀
+                    <Image source={require("../../assets/check.png")} style={global.checkimg}/>
+                    </Text>
+                </View>
 
+                <View>
+                    <View style = {global.containerLive}>
+                        <Text style={global.tag}>Live</Text>
+                        <Text style={global.like}>14.3k</Text>
+                    </View>   
+                    <Image source={require("../../assets/story3.jpg")} style={global.storyimg}/>
+                    <Text style={global.username}>Howard⠀
+                    <Image source={require("../../assets/check.png")} style={global.checkimg}/>
+                    </Text>
+                </View>
 
-                <Image source={require("../../assets/story2.jpg")} style={global.storyimg}/>
-                <Image source={require("../../assets/story3.jpg")} style={global.storyimg}/>
             </ScrollView>
 
-            <View style = {global.containerstory}>
-             <Text style = {global.trending}>Trending</Text>
-             <Text style = {global.more}>More ➜</Text>
-            </View>
-           
         </View>
     );
 }
